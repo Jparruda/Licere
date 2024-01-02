@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between; /* Alinhar os elementos à esquerda e à direita */
   align-items: flex-start; /* Alinhar os elementos acima */
-  padding: 3rem;
+  padding: 1rem 3rem;
   min-height: 100vh;
   background: linear-gradient(to bottom, #f6f6f8, #B2B5FF, #6A70FF);
 }
@@ -20,7 +20,6 @@
   font-weight: 750;
   color: #09E762;
   font-size: 30px;
- 
   margin-right: 20px; /* Ajuste a margem conforme necessário */
 }
 

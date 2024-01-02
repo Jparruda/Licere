@@ -1,14 +1,16 @@
 .main {
   display: flex;
-  justify-content: space-between; /* Alinhar os elementos à esquerda e à direita */
-  align-items: flex-start; /* Alinhar os elementos acima */
-  padding: 3rem;
+  justify-self: center;
+  justify-content: space-around;
+  align-items: center;
   min-height: 100vh;
   background: linear-gradient(to bottom, #f6f6f8, #B2B5FF, #6A70FF);
 }
 
 .form_main {
-  width: 220px;
+  width: 390px;
+  height: 490px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,9 +25,9 @@
 .form_main::before {
   position: absolute;
   content: "";
-  width: 300px;
-  height: 300px;
-  background-color: rgb(209, 193, 255);
+  width: 380px;
+  height: 395px;
+  background-color: #b6b9f7;
   transform: rotate(45deg);
   left: -180px;
   bottom: 30px;
@@ -38,7 +40,8 @@
   font-size: 2em;
   color: #2e2e2e;
   font-weight: 700;
-  margin: 5px 0 10px 0;
+  margin-bottom: 10px;
+  margin-bottom: 20px;
   z-index: 2;
 }
 
@@ -54,11 +57,11 @@
 .inputIcon {
   position: absolute;
   left: 3px;
-}
+ }
 
 .inputField {
   width: 100%;
-  height: 30px;
+  height: 40px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid rgb(173, 173, 173);
@@ -81,32 +84,35 @@
   font-weight: 500;
 }
 
-#button {
+.buttonLogin {
   z-index: 2;
   position: relative;
   width: 100%;
+  border-radius: 5px;
   border: none;
-  background-color: rgb(162, 104, 255);
-  height: 30px;
+  background-color: #9568ff;
+  height: 45px;
   color: white;
-  font-size: .8em;
+  font-size: 1.3em;
   font-weight: 500;
   letter-spacing: 1px;
   margin: 10px;
+  margin-top: 25px;
   cursor: pointer;
 }
 
-#button:hover {
+.buttonLogin:hover {
   background-color: rgb(126, 84, 255);
 }
 
 .forgotLink {
+  font-size: 1em;
   z-index: 2;
-  font-size: .7em;
   font-weight: 500;
   color: rgb(44, 24, 128);
   text-decoration: none;
   padding: 8px 15px;
-  border-radius: 20px;
+ 
+  margin-top: 10px; /* Adiciona margem acima do link */
+  display: inline-block; /* Garante que a margem superior seja aplicada corretamente */
 }
-

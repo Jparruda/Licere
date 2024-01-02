@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link'; // Adicionando o Link para a navegação interna
 import styles from './css/page.module.css';
 
+
 export default function Home() {
   return (
     <main className={styles.main}>
