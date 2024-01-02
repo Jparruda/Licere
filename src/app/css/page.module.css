@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,400;1,700&family=Mukta&display=swap');
+
+.main {
+  display: flex;
+  justify-content: space-between; /* Alinhar os elementos à esquerda e à direita */
+  align-items: flex-start; /* Alinhar os elementos acima */
+  padding: 3rem;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f6f6f8, #B2B5FF, #6A70FF);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logoname {
+  font-family: 'Lobster Two', sans-serif;
+  font-weight: 750;
+  color: #09E762;
+  font-size: 30px;
+ 
+  margin-right: 20px; /* Ajuste a margem conforme necessário */
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-end; /* Alinhar os botões à direita */
+}
+
+.card {
+  color: #6c6fca;
+  border-radius: 15px;
+  margin: 18px;
+  padding: 18px;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
+  transition: all 0.5s ease;
+
+}
+
+
+.card:active {
+ 
+  background-color: hsl(253, 60%, 61%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(103, 78, 214) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.card:hover {
+  background-color: hsl(253, 60%, 61%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(103, 78, 214) 0px 7px 29px 0px;
+}
+
+
+.card h2 {
+  font-size: large;
+} 
+
+/* Mobile */
+@media (max-width: 700px) {
+ 
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+
+}
