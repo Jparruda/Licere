@@ -1,16 +1,14 @@
-import Image from 'next/image';
-import Link from 'next/link'; // Adicionando o Link para a navegação interna
-import styles from './css/page.module.css';
 
+import Link from 'next/link'; 
+import styles from './css/page.module.css';
+import Logo from './components/logo/page';
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
 
-        <div className={styles.logoname}>
-          <h1>LiCere</h1>
-        </div>
+       <Logo></Logo>
 
         <div className={styles.buttons}>
         
