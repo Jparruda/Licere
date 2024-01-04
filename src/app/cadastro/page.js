@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../css/login.module.css';
 import Logo from '../components/logo/page';
 
-export default function Login() {
+export default function Register() {
   return (
     <main className={styles.main}>
 
@@ -26,8 +26,10 @@ export default function Login() {
           <input type="password" className={styles.inputField} id="senha" placeholder="Senha"/>
         </div>
         
-        <button className={styles.buttonLogin}>Entrar</button>
-        <a className={styles.forgotLink} href="#">Esqueceu sua senha?</a>
+        <button className={styles.buttonLogin}>Criar conta</button>
+        <div className={styles.forgotLink}>
+        <p>Já tem conta? <a  href="#">Fazer login</a></p>
+        </div>
       </form>
      </div>
     </main>
