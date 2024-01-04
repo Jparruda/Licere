@@ -14,7 +14,7 @@ export default function Home() {
         
           <Link href="/login"  className={styles.card}>
               
-              <h2>Entrar <span>-&gt;</span></h2>
+              <h2>Entrar</h2>
            
           </Link>
 
@@ -24,7 +24,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2>Cadastrar <span>-&gt;</span></h2>
+            <h2>Cadastrar</h2>
           </a>
         </div>
       </div>
