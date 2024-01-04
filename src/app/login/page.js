@@ -28,6 +28,8 @@ export default function Login() {
         
         <button className={styles.buttonLogin}>Entrar</button>
         <a className={styles.forgotLink} href="#">Esqueceu sua senha?</a>
+
+        <Link className={styles.forgotLink}  href="/">Voltar</Link>
       </form>
      </div>
     </main>

@@ -28,7 +28,7 @@ export default function Register() {
         
         <button className={styles.buttonLogin}>Criar conta</button>
         <div className={styles.forgotLink}>
-        <p>Já tem conta? <a  href="#">Fazer login</a></p>
+        <p>Já tem conta? <Link  href="/login">Fazer login</Link></p>
         </div>
       </form>
      </div>
