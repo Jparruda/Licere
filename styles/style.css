@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,400;1,700&family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  height: 100vh; /* Define a altura como 100% da viewport */
+  background-image: linear-gradient(to bottom, #ffffff, #8287FE);
+}
+/* Estilo da appbar */
+.appbar {
+  background-color: #ffffff00;
+  color: #ffffff;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%; /* Garante que a barra ocupe toda a largura */
+  z-index: 1000; /* Define a ordem de empilhamento */
+  transition: top 0.3s ease-in-out; /* Adiciona uma transição suave para o efeito de aparecer/desaparecer */
+}
+
+.appbar__logo {
+  font-size: 3.5rem;
+  color: #09E762;
+  font-family:  'Lobster Two', sans-serif;
+  font-weight: 750;
+}
+
+.appbar__nav ul {
+  list-style-type: none;
+}
+
+.appbar__nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.appbar__nav ul li:first-child {
+  margin-left: 0;
+}
+
+.appbar__nav ul li a {
+  display: flex;
+  color: #09E762;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.5rem;
+  border: 2px solid #09E762;
+  border-radius: 200px;
+  padding: 8px 0;
+  width: 115%;
+  text-align: center;
+  justify-content: center;
+}
+
+.appbar__nav ul li a:active{
+  background-color: rgb(173, 114, 255);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(173, 114, 255) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.appbar__nav ul li a:hover {
+  background-color: rgb(173, 114, 255);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(173, 114, 255) 0px 7px 29px 0px;
+  border: none;
+}
+
+/* Adiciona espaço ao corpo para evitar sobreposição com a barra fixa */
+body {
+  padding-top: 70px; /* Ajuste conforme necessário para evitar sobreposição */
+}
