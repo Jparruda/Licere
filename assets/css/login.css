@@ -1,0 +1,136 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.voltar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 50px; /* Manter o raio em pixels para garantir a circularidade */
+  width: 68px; /* Largura fixa em pixels */
+  height: 68px; /* Altura fixa em pixels */
+  margin-top: 7px;
+  margin-left: 15px;
+}
+
+img {
+  width: 38px;
+  height: 38px;
+  display: block;
+  max-width: 100%;
+  border-radius: 50%; /* Adicionando borda circular à imagem */
+}
+
+h1 {
+  color: #09e762;
+  font-family: 'Lobster Two', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 7px;
+  font-size: 66px;
+}
+
+.cadastrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+  margin-right: 15px;
+  color: #577eca;
+  font-size: 30px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Isso centralizará verticalmente se houver espaço extra */
+  height: 100vh;
+  width: 350px;
+  height: 332px;
+  background-color: #828eff;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+form {
+  text-align: center; /* Centraliza o conteúdo do formulário */
+}
+
+.login-container .input-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 7px;
+}
+
+.input-box i {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login-container .btn {
+  width: 75%;
+  height: 45px;
+  background-color: #e8ffe9;
+  border: 1px solid #000;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6c72ff;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .cadastrar {
+    width: 127px;
+    height: 36px;
+    font-size: 21px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .voltar {
+    width: 48px;
+    height: 48px;
+  }
+  img {
+    width: 28px;
+    height: 28px;
+  }
+  .login-container {
+    margin-bottom: 35px;
+  }
+}
