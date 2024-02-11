@@ -14,7 +14,7 @@
 .appbar {
   background-color: #ffffff00;
   color: #ffffff;
-  padding: 8px 20px;
+  padding: 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +54,7 @@
   font-size: 1.5rem;
   border: 2px solid #09E762;
   border-radius: 200px;
-  padding: 8px 0;
+  padding: 8px 15px;
   width: 115%;
   text-align: center;
   justify-content: center;
@@ -71,8 +71,8 @@
 .appbar__nav ul li a:hover {
   background-color: rgb(173, 114, 255);
   color: hsl(0, 0%, 100%);
-  box-shadow: rgb(173, 114, 255) 0px 7px 29px 0px;
-  border: none;
+  box-shadow: #ad72ff 0px 7px 29px 0px;
+  border: #ad72ff;
 }
 
 /* Adiciona espaço ao corpo para evitar sobreposição com a barra fixa */
